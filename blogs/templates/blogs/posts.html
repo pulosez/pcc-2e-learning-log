@@ -1,3 +1,6 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
 <p>Posts:</p>
 <ul>
     {% for post in posts %}
@@ -15,3 +18,4 @@
 <p>
     <a href="{% url 'blogs:new_post' %}">Add a new post</a>
 </p>
+{% endblock content %}
