@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'learning_logs',
     'pizzeria',
     'blogs',
+    'users',
     # Default django apps.
     'django.contrib.admin',
     'django.contrib.auth',

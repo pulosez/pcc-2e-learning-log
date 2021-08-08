@@ -6,4 +6,5 @@ urlpatterns = [
     path('', include('learning_logs.urls')),
     path('pizzeria/', include('pizzeria.urls')),
     path('blog/', include('blogs.urls')),
+    path('users/', include('users.urls')),
 ]
