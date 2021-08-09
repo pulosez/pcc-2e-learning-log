@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # My apps
     'learning_logs',
-    'pizzeria',
     'blogs',
     'users',
     # Third party apps.
