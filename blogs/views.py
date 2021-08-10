@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import Http404
 
@@ -36,7 +36,7 @@ def new_post(request):
 
 @login_required
 def edit_post(request, post_id):
-    post = BlogPost.objects.get(id=post_id)
+    post = get_object_or_404(id=post_id)
     check_post_owner(post.owner, request.user)
 
     if request.method != 'POST':
